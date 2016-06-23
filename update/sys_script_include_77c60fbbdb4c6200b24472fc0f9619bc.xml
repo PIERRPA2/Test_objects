@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_pp_test.test_git</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>test_git</name>
+        <script><![CDATA[var test_git = Class.create();
+test_git.prototype = {
+    initialize: function() {
+    },
+
+    type: 'test_git'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>PIERRPA2</sys_created_by>
+        <sys_created_on>2016-06-23 15:57:37</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>77c60fbbdb4c6200b24472fc0f9619bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_git</sys_name>
+        <sys_package display_value="pp_test" source="x_novrp_pp_test">77a60b7bdb4c6200b24472fc0f9619e3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="pp_test">77a60b7bdb4c6200b24472fc0f9619e3</sys_scope>
+        <sys_update_name>sys_script_include_77c60fbbdb4c6200b24472fc0f9619bc</sys_update_name>
+        <sys_updated_by>PIERRPA2</sys_updated_by>
+        <sys_updated_on>2016-06-23 15:57:37</sys_updated_on>
+    </sys_script_include>
+</record_update>
