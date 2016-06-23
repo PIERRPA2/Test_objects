@@ -17,7 +17,7 @@ test_git.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>PIERRPA2</sys_created_by>
         <sys_created_on>2016-06-23 15:57:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>77c60fbbdb4c6200b24472fc0f9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>test_git</sys_name>

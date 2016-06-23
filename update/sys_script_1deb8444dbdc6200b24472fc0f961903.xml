@@ -28,11 +28,28 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[// we changed our own user record. Set out timezone, date, and time formats
+setUserParticulars();
 
-	// Add your code here
-
-})(current, previous);]]></script>
+function setUserParticulars() {
+    if (current.date_format.changes()) {
+        gs.getSession().setDateFormat(current.date_format);
+        gs.getUser().setDateFormat(current.date_format);
+    }
+    
+    if (current.time_format.changes()) {
+        gs.getSession().setTimeFormat(current.time_format);
+        gs.getUser().setTimeFormat(current.time_format);
+    }
+    
+    if (current.time_zone.changes())
+        gs.getSession().setTimeZoneName(current.time_zone);
+    
+    if (current.preferred_language.changes() || current.country_code.changes()) {
+		gs.getSession().setLanguage(current.preferred_language);
+		gs.getSession().loadUserByID(gs.getUser().getID());
+	}
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>PIERRPA2</sys_created_by>
         <sys_created_on>2016-06-23 20:59:50</sys_created_on>
@@ -40,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1deb8444dbdc6200b24472fc0f961903</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>test</sys_name>
         <sys_overrides/>
         <sys_package display_value="pp_test" source="x_novrp_pp_test">77a60b7bdb4c6200b24472fc0f9619e3</sys_package>
@@ -49,7 +66,7 @@
         <sys_scope display_value="pp_test">77a60b7bdb4c6200b24472fc0f9619e3</sys_scope>
         <sys_update_name>sys_script_1deb8444dbdc6200b24472fc0f961903</sys_update_name>
         <sys_updated_by>PIERRPA2</sys_updated_by>
-        <sys_updated_on>2016-06-23 21:00:04</sys_updated_on>
+        <sys_updated_on>2016-06-23 22:16:17</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
