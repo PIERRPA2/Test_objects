@@ -30,7 +30,7 @@
         <role_conditions/>
         <script><![CDATA[// we changed our own user record. Set out timezone, date, and time formats
 setUserParticulars();
-
+//
 function setUserParticulars() {
     if (current.date_format.changes()) {
         gs.getSession().setDateFormat(current.date_format);
@@ -57,7 +57,7 @@ function setUserParticulars() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1deb8444dbdc6200b24472fc0f961903</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>test</sys_name>
         <sys_overrides/>
         <sys_package display_value="pp_test" source="x_novrp_pp_test">77a60b7bdb4c6200b24472fc0f9619e3</sys_package>
@@ -66,7 +66,7 @@ function setUserParticulars() {
         <sys_scope display_value="pp_test">77a60b7bdb4c6200b24472fc0f9619e3</sys_scope>
         <sys_update_name>sys_script_1deb8444dbdc6200b24472fc0f961903</sys_update_name>
         <sys_updated_by>PIERRPA2</sys_updated_by>
-        <sys_updated_on>2016-06-23 22:16:17</sys_updated_on>
+        <sys_updated_on>2016-06-23 22:20:50</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
